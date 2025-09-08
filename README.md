@@ -1,3 +1,3 @@
-# PPT
+#PPT 
 git clone https://github.com/znixon241-collab/PPT.git
-cd znixon241-collab
+cd your-repo-name
