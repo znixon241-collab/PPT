@@ -1,3 +1,3 @@
 # PPT
-git clone YOUR_REPO_URL
-cd your-repo-name
+git clone https://github.com/znixon241-collab/PPT.git
+cd znixon241-collab
