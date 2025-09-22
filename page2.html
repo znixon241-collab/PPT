@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Page 2 | Web Basics Portfolio</title>
+  <!-- This is the second page. It includes semantic structure and a link back to Home. -->
+</head>
+<body>
+  <header>
+    <h1>More Details</h1>
+    <h2>Deep Dive into Semantic HTML</h2>
+  </header>
+
+  <main>
+    <section aria-labelledby="semantic-heading">
+      <h2 id="semantic-heading">Why Semantic Tags Matter</h2>
+      <p>
+        Semantic HTML (e.g., <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>)
+        clearly communicates structure to browsers, assistive technologies, and search engines.
+      </p>
+      <p>
+        It improves accessibility, SEO, and maintainability by giving meaningful labels to content regions.
+      </p>
+    </section>
+
+    <section aria-labelledby="checklist-heading">
+      <h2 id="checklist-heading">Quick Checklist</h2>
+      <ul>
+        <li>Use one <code>&lt;h1&gt;</code> per page for the main title</li>
+        <li>Group related content in <code>&lt;section&gt;</code></li>
+        <li>Keep navigation consistent (e.g., links between pages)</li>
+      </ul>
+      <ol>
+        <li>Validate your HTML</li>
+        <li>Preview with Live Server</li>
+        <li>Commit early and often</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Footer navigation">
+      <!-- Internal link back to index.html -->
+      <a href="index.html">Back to Home</a>
+    </nav>
+    <p>Thanks for visiting!</p>
+  </footer>
+</body>
+</html>

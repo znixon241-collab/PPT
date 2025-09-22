@@ -1,3 +1,11 @@
 My Favorite Things 
-git add .
-git commit -m "Created a favorites.txt file and added a title"
+Family 
+Movies 
+Technology 
+SOcial Media 
+Food 
+Football 
+Mississippi 
+Cars 
+Internet 
+Basketball 

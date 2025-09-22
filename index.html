@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NFL Football 101 | Home</title>
+  <!-- This page introduces the NFL and serves as the entry point of our two-page site.
+       REQUIREMENTS COVERED HERE:
+       - Multiple header tags (h1/h2/h3)
+       - Multiple paragraph tags
+       - Unordered list (ul)
+       - Ordered list (ol)
+       - Image with relative path, alt, and width attributes
+       - Semantic structure: header, main, section, footer
+       - Internal link to page2.html in the footer
+  -->
+  <meta name="description" content="NFL basics: what the league is, how the game flows, positions, scoring, and beginner-friendly tips." />
+</head>
+<body>
+  <header>
+    <!-- Semantic header with page title and subtitle -->
+    <h1>NFL Football 101</h1> <!-- Primary title of the page (one h1 per page is best practice) -->
+    <h2>History, Basics, and How the Game Works</h2> <!-- Secondary heading introducing the page focus -->
+  </header>
+
+  <main>
+    <!-- main contains the unique content of this specific page -->
+    <section aria-labelledby="what-is-nfl">
+      <!-- section groups related content and improves accessibility with aria-labelledby -->
+      <h2 id="what-is-nfl">What Is the NFL?</h2>
+      <p>
+        The National Football League (NFL) is a professional American football league made up of 32 teams
+        divided between the American Football Conference (AFC) and National Football Conference (NFC).
+      </p>
+      <p>
+        Each season culminates in the Super Bowl, where the AFC and NFC champions meet to compete for the
+        league title. The sport emphasizes strategy, athleticism, and clock management.
+      </p>
+
+      <h3>Quick League Facts</h3>
+      <!-- Unordered list: items without a strict sequence -->
+      <ul>
+        <li>32 Teams (16 in the AFC, 16 in the NFC)</li>
+        <li>Regular season typically spans 18 weeks</li>
+        <li>Playoffs lead to the Super Bowl</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="how-to-watch">
+      <h2 id="how-to-watch">How the Game Flows</h2>
+      <!-- Ordered list: steps in a sequence -->
+      <ol>
+        <li>Kickoff starts the game.</li>
+        <li>Offense has four downs to gain 10 yards (resetting to a new first down if successful).</li>
+        <li>Teams score via touchdowns, field goals, and extra points/two-point conversions.</li>
+        <li>Defense tries to stop drives, force punts, or create turnovers.</li>
+      </ol>
+      <p>
+        Downs and distance are the core mechanics: move the ball 10+ yards in four tries to keep the drive alive.
+        Field position and clock control are crucial to a team’s strategy.
+      </p>
+    </section>
+
+    <section aria-labelledby="featured-image">
+      <h2 id="featured-image">League Identity</h2>
+      <!-- Replace the src filename with your real image in /images -->
+      <img
+        src="images/nfl-logo.png"
+        alt="NFL shield logo representing the National Football League"
+        width="260"
+      />
+      <!-- width constrains display; browser keeps aspect ratio. Use a reasonably sized image for performance. -->
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer includes the internal link to the other page -->
+    <nav aria-label="Footer navigation">
+      <a href="page2.html">Read more on Page 2</a>
+    </nav>
+    <p>&copy; 2025 Your Name • Educational project</p>
+  </footer>
+</body>
+</html>
