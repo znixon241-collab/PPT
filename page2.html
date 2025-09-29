@@ -3,55 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Page 2 | Web Basics Portfolio</title>
-  <!-- This is the second page. It includes semantic structure and a link back to Home. -->
+  <title>NFL 101 | Teams & History</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <h1>More Details</h1>
-    <h2>Deep Dive into Semantic HTML</h2>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">NFL Football 101</h1>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link" href="page2.html" aria-current="page">Teams & History</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section aria-labelledby="semantic-heading">
-      <h2 id="semantic-heading">Why Semantic Tags Matter</h2>
+  <main id="main-content" class="container main">
+    <section id="semantic-heading" class="card">
+      <h2>Why Semantic Tags Matter</h2>
       <p>
-        Semantic HTML (e.g., <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>)
-        clearly communicates structure to browsers, assistive technologies, and search engines.
+        Semantic HTML (e.g., <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>) clearly communicates structure to browsers, assistive technologies, and search engines.
       </p>
-      <p>
-        It improves accessibility, SEO, and maintainability by giving meaningful labels to content regions.
-      </p>
+      <p>It improves accessibility, SEO, and maintainability by giving meaningful labels to content regions.</p>
+      <div class="flex-row gap-lg wrap">
+        <div class="card">
+          <h3>Quick Checklist</h3>
+          <ul class="list list--compact">
+            <li>Use one <code>&lt;h1&gt;</code> per page</li>
+            <li>Group related content in <code>&lt;section&gt;</code></li>
+            <li>Keep navigation consistent</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Workflow</h3>
+          <ol>
+            <li>Validate your HTML</li>
+            <li>Preview with Live Server</li>
+            <li>Commit early and often</li>
+          </ol>
+        </div>
+      </div>
     </section>
 
-    <section aria-labelledby="checklist-heading">
-      <h2 id="checklist-heading">Quick Checklist</h2>
-      <ul>
-        <li>Use one <code>&lt;h1&gt;</code> per page for the main title</li>
-        <li>Group related content in <code>&lt;section&gt;</code></li>
-        <li>Keep navigation consistent (e.g., links between pages)</li>
-      </ul>
-      <ol>
-        <li>Validate your HTML</li>
-        <li>Preview with Live Server</li>
-        <li>Commit early and often</li>
-      </ol>
+    <section id="teams" class="card">
+      <h2>Teams by Conference</h2>
+      <div class="flex-row gap-lg wrap">
+        <div class="team-block">
+          <h3 class="team-block__title">AFC</h3>
+          <ul class="list list--compact">
+            <li>Kansas City Chiefs</li>
+            <li>Baltimore Ravens</li>
+            <li>Buffalo Bills</li>
+            <li>Cincinnati Bengals</li>
+          </ul>
+        </div>
+        <div class="team-block">
+          <h3 class="team-block__title">NFC</h3>
+          <ul class="list list--compact">
+            <li>San Francisco 49ers</li>
+            <li>Philadelphia Eagles</li>
+            <li>Detroit Lions</li>
+            <li>Dallas Cowboys</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="history" class="card">
+      <h2>A Short History</h2>
+      <div class="timeline">
+        <div class="timeline__item">
+          <span class="timeline__dot"></span>
+          <div class="timeline__content">
+            <h4>Early Years</h4>
+            <p>Formation of the league and the early championship games.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <span class="timeline__dot"></span>
+          <div class="timeline__content">
+            <h4>Super Bowl Era</h4>
+            <p>Merger and the start of the AFC vs. NFC championship tradition.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <span class="timeline__dot"></span>
+          <div class="timeline__content">
+            <h4>Modern Game</h4>
+            <p>Rule changes, analytics, and evolving play styles.</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <nav aria-label="Footer navigation">
-      <!-- Internal link back to index.html -->
-      <a href="index.html">Back to Home</a>
-    </nav>
-    <p>Thanks for visiting!</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav aria-label="Footer navigation">
+        <a class="nav__link" href="index.html">Return to Home page</a>
+      </nav>
+      <p>© <span id="year"></span> Your Name • Educational project</p>
+    </div>
   </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-</div>
-<link rel="stylesheet" href="css/style.css" />
-
-<div class="flex-row gap-lg wrap">
-  <div class="team-block">…</div>
-  <div class="team-block">…</div>
-</div>
