@@ -13,12 +13,9 @@
 * { box-sizing: border-box; }
 html, body { height: 100%; }
 body {
-  margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  color: var(--ink);
-  background: linear-gradient(160deg, var(--bg), #0d1526 60%, #0a0f1c);
-  line-height: 1.55;
+font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+.tracking-tight { letter-spacing: 0.2px; }
 
 /* Tag-based selectors */
 h1, h2, h3, h4 { margin: 0 0 0.5rem; line-height: 1.2; }
@@ -59,6 +56,9 @@ a:hover { text-decoration: underline; }
 }
 .section-title { font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin-bottom: 0.5rem; }
 .lead { color: var(--muted); max-width: 60ch; }
+.bg-nfl {
+background: linear-gradient(135deg, var(--nfl-blue), var(--nfl-red));
+}
 
 /* Cards (class reused) */
 .card {
@@ -95,6 +95,24 @@ a:hover { text-decoration: underline; }
 .site-footer { margin-top: 2rem; border-top: 1px solid rgba(255,255,255,0.08); background: #0b1426; }
 .footer-inner { padding: 1rem 0; color: var(--muted); text-align: center; }
 
+/* Custom button that complements Bootstrap */
+.btn-nfl {
+--bs-btn-bg: var(--nfl-red);
+--bs-btn-border-color: var(--nfl-red);
+--bs-btn-hover-bg: #a50a28;
+--bs-btn-hover-border-color: #a50a28;
+--bs-btn-color: #fff;
+}
+
+
+/* Optional: nicer article typography */
+.prose p { line-height: 1.75; }
+.prose ul { padding-left: 1.2rem; }
+
+
+/* Utility fix for team logos inside cards */
+.object-fit-contain { object-fit: contain; height: 160px; }
+
 /* Initial responsive tweak */
 @media (max-width: 880px) {
   .hero__inner { flex-direction: column; }
@@ -122,6 +140,14 @@ a:hover { text-decoration: underline; }
 @media (max-width: 880px) {
   .hero__inner { flex-direction: column; }
 }
+
+/*
+.header { display: flex; justify-content: space-between; align-items: center; padding: 1rem; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.card { border: 1px solid #ddd; border-radius: 8px; }
+.btn { display: inline-block; padding: .5rem 1rem; border-radius: 6px; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+*/
 
 @media (max-width: 700px) {
   body { font-size: 1.05rem; }

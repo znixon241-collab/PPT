@@ -1,113 +1,128 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NFL 101 | Teams & History</title>
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NFL 101 — Page 2</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+<link rel="stylesheet" href="images/css/style.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+<a class="navbar-brand fw-bold" href="index.html">NFL 101</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="mainNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link active" href="page2.html">Page 2</a></li>
+</ul>
+</div>
+</div>
+</nav>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <h1 class="site-title">NFL Football 101</h1>
-      <nav class="nav" aria-label="Primary">
-        <a class="nav__link" href="index.html">Home</a>
-        <a class="nav__link" href="page2.html" aria-current="page">Teams & History</a>
-      </nav>
-    </div>
-  </header>
+<main class="py-5">
+<div class="container">
+<div class="row g-4">
+<div class="col-lg-8">
+<article class="prose">
+<h1 class="mb-4">Rules & Basics</h1>
 
-  <main id="main-content" class="container main">
-    <section id="semantic-heading" class="card">
-      <h2>Why Semantic Tags Matter</h2>
-      <p>
-        Semantic HTML (e.g., <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>) clearly communicates structure to browsers, assistive technologies, and search engines.
-      </p>
-      <p>It improves accessibility, SEO, and maintainability by giving meaningful labels to content regions.</p>
-      <div class="flex-row gap-lg wrap">
-        <div class="card">
-          <h3>Quick Checklist</h3>
-          <ul class="list list--compact">
-            <li>Use one <code>&lt;h1&gt;</code> per page</li>
-            <li>Group related content in <code>&lt;section&gt;</code></li>
-            <li>Keep navigation consistent</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Workflow</h3>
-          <ol>
-            <li>Validate your HTML</li>
-            <li>Preview with Live Server</li>
-            <li>Commit early and often</li>
-          </ol>
-        </div>
-      </div>
-    </section>
 
-    <section id="teams" class="card">
-      <h2>Teams by Conference</h2>
-      <div class="flex-row gap-lg wrap">
-        <div class="team-block">
-          <h3 class="team-block__title">AFC</h3>
-          <ul class="list list--compact">
-            <li>Kansas City Chiefs</li>
-            <li>Baltimore Ravens</li>
-            <li>Buffalo Bills</li>
-            <li>Cincinnati Bengals</li>
-          </ul>
-        </div>
-        <div class="team-block">
-          <h3 class="team-block__title">NFC</h3>
-          <ul class="list list--compact">
-            <li>San Francisco 49ers</li>
-            <li>Philadelphia Eagles</li>
-            <li>Detroit Lions</li>
-            <li>Dallas Cowboys</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+<h2 id="positions" class="mt-4">Positions</h2>
+<p>Offense has a quarterback, running backs, wide receivers, tight ends, and linemen. Defense has linemen, linebackers, and defensive backs. Special teams handle kicking and returns.</p>
 
-    <section id="history" class="card">
-      <h2>A Short History</h2>
-      <div class="timeline">
-        <div class="timeline__item">
-          <span class="timeline__dot"></span>
-          <div class="timeline__content">
-            <h4>Early Years</h4>
-            <p>Formation of the league and the early championship games.</p>
-          </div>
-        </div>
-        <div class="timeline__item">
-          <span class="timeline__dot"></span>
-          <div class="timeline__content">
-            <h4>Super Bowl Era</h4>
-            <p>Merger and the start of the AFC vs. NFC championship tradition.</p>
-          </div>
-        </div>
-        <div class="timeline__item">
-          <span class="timeline__dot"></span>
-          <div class="timeline__content">
-            <h4>Modern Game</h4>
-            <p>Rule changes, analytics, and evolving play styles.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <nav aria-label="Footer navigation">
-        <a class="nav__link" href="index.html">Return to Home page</a>
-      </nav>
-      <p>© <span id="year"></span> Your Name • Educational project</p>
-    </div>
-  </footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+<h2 id="scoring" class="mt-5">Scoring</h2>
+<ul class="mb-4">
+<li>Touchdown: 6 points</li>
+<li>Extra point (kick): 1 point</li>
+<li>Two-point conversion: 2 points</li>
+<li>Field goal: 3 points</li>
+<li>Safety: 2 points</li>
+</ul>
+
+
+<h2 id="penalties" class="mt-5">Common Penalties</h2>
+<p>False start (offense moves early), holding (illegal restraining), and pass interference (contact before the ball arrives) are among the most frequent calls.</p>
+
+
+<h2 id="teams" class="mt-5">Sample Teams</h2>
+<div class="row g-4 row-cols-1 row-cols-sm-2">
+<div class="col">
+<div class="card h-100 shadow-sm">
+<img src="images/teams/chiefs.png" class="card-img-top p-4 object-fit-contain" alt="Kansas City Chiefs logo" />
+<div class="card-body d-flex flex-column">
+<h3 class="h5 card-title">Kansas City Chiefs</h3>
+<p class="card-text flex-grow-1">AFC West • GEHA Field at Arrowhead</p>
+<a href="https://www.chiefs.com/" target="_blank" rel="noopener" class="btn btn-primary mt-2">Official Site</a>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card h-100 shadow-sm">
+<img src="images/teams/eagles.png" class="card-img-top p-4 object-fit-contain" alt="Philadelphia Eagles logo" />
+<div class="card-body d-flex flex-column">
+<h3 class="h5 card-title">Philadelphia Eagles</h3>
+<p class="card-text flex-grow-1">NFC East • Lincoln Financial Field</p>
+<a href="https://www.philadelphiaeagles.com/" target="_blank" rel="noopener" class="btn btn-primary mt-2">Official Site</a>
+</div>
+</div>
+</div>
+</div>
+
+<h2 id="sources" class="mt-5">Sources</h2>
+<div class="table-responsive">
+<table class="table align-middle">
+<thead>
+<tr>
+<th>Type</th>
+<th>Title</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rules</td>
+<td>NFL Rulebook (overview)</td>
+<td><a href="https://operations.nfl.com/football-ops/rules/" target="_blank" rel="noopener">NFL Operations</a></td>
+</tr>
+<tr>
+<td>Beginner Guide</td>
+<td>How to Watch Football</td>
+<td><a href="#" target="_blank" rel="noopener">(Your article of choice)</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<aside class="col-lg-4">
+<div class="p-3 bg-light rounded border">
+<h3 class="h5">Quick Links</h3>
+<div class="list-group list-group-flush">
+<a class="list-group-item list-group-item-action" href="#positions">Positions</a>
+<a class="list-group-item list-group-item-action" href="#scoring">Scoring</a>
+<a class="list-group-item list-group-item-action" href="#penalties">Penalties</a>
+<a class="list-group-item list-group-item-action" href="#teams">Teams</a>
+<a class="list-group-item list-group-item-action" href="#sources">Sources</a>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</main>
+
+<footer class="py-4 bg-dark text-white-50">
+<div class="container d-flex justify-content-between align-items-center">
+<small>© <span id="year"></span> NFL 101</small>
+<a class="link-light" href="#sources">Sources</a>
+</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
