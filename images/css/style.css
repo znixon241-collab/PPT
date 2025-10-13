@@ -23,12 +23,14 @@ p { margin: 0 0 1rem; }
 ul { padding-left: 1.25rem; }
 a { color: var(--ink); text-decoration: none; }
 a:hover { text-decoration: underline; }
+h1, .h1 { letter-spacing: 0.3px; }
 
 /* Layout helpers */
 .container { width: min(1100px, 92%); margin-inline: auto; }
 .flex-row { display: flex; }
 .wrap { flex-wrap: wrap; }
 .gap-lg { gap: 1.5rem; }
+.section-card { border-radius: 0.75rem; }
 
 /* Header + Nav */
 .site-header {
